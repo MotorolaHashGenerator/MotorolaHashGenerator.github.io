@@ -9,36 +9,36 @@
     <!-- Bootstrap CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
 
-    <title>Motorola - Генератор Хешів</title>
+    <title>Motorola Radio - Генератор Хешів</title>
 </head>
 <body>
-<main>
+<main class="container">
     <div class="px-4 py-5 my-5 text-center">
-        <button type="button" onclick="presetSize(10)">
-    10 (40 bit)
-</button>
-
-<button type="button" onclick="presetSize(24)">
-   24 (RAS)
-</button>
-
-<button type="button" onclick="presetSize(64)">
-   64 (256 bit)
-</button>
-
-<br />
-
-<input id="size" type="number" value="64" min="1" max="100">
-<button type="button" onclick="generateRandHash()">
-   Згенерувати ХЕШ
-</button>
+		<h1>Motorola Radio - Генератор Хешів</h1>
+		
+		<div class="mb-3">
+			<div class="alert alert-info" role="alert">
+				A simple light alert—check it out!
+			</div>
+		</div>
+		<div class="mb-3">
+			<button class="btn btn-dark" type="button" onclick="presetSize(10)">10 (40 bit)</button>
+			<button class="btn btn-dark" type="button" onclick="presetSize(24)">24 (RAS)</button>
+			<button class="btn btn-dark" type="button" onclick="presetSize(64)">64 (256 bit)</button>
+		</div>
+		<div class="mb-3">
+			<input class="form-control" id="size" type="number" value="64" min="1" max="100">
+		</div>
+		<div class="mb-3">
+			<button class="btn btn-dark" type="button" onclick="generateRandHash()">Згенерувати ХЕШ</button>
+		</div>
     </div>
 </main>
 <footer>
     <div class="text-center">
         <div class="col-lg-6 mx-auto">
             <p class="lead mb-4 text-secondary">
-                З повагою <a class="text-decoration-none text-info" href="/">Motorola - Генератор Хешів</a> &copy;
+                З повагою <a class="text-decoration-none text-info" href="/">Motorola Radio - Генератор Хешів</a> &copy;
             </p>
         </div>
     </div>
