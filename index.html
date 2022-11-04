@@ -13,26 +13,46 @@
 </head>
 <body>
 <main class="container">
-    <div class="px-4 py-5 my-5 text-center">
-		<h1>Motorola Radio - Генератор Хешів</h1>
-		
+	<div class="px-4 py-5 my-5">
+		<div class="mb-3 text-center">
+			<h1>Motorola Radio - Генератор Хешів</h1>
+		</div>
 		<div class="mb-3">
-			<div class="alert alert-info" role="alert">
-				A simple light alert—check it out!
+			<div class="alert alert-success" role="alert">
+				Ключі покращеної конфіденційності містять від <b>1</b> до <b>10</b> знаків у форматі Unicode, включаючи тільки <b>0-9</b>, <b>A-F</b> (шістнадцятковий формат).
 			</div>
 		</div>
 		<div class="mb-3">
-			<button class="btn btn-dark" type="button" onclick="presetSize(10)">10 (40 bit)</button>
-			<button class="btn btn-dark" type="button" onclick="presetSize(24)">24 (RAS)</button>
-			<button class="btn btn-dark" type="button" onclick="presetSize(64)">64 (256 bit)</button>
+			<input class="form-control" id="enhanzed_key_size" type="number" value="10" min="1" max="10">
 		</div>
 		<div class="mb-3">
-			<input class="form-control" id="size" type="number" value="64" min="1" max="100">
+			<button class="btn btn-success" type="button" onclick="generateHexadecimalKey('enhanzed_key_size')">Згенерувати ключ покращеної конфіденційності</button>
+		</div>
+		<hr/>
+		<div class="mb-3">
+			<div class="alert alert-primary" role="alert">
+				Симетричні ключі містять від <b>1</b> до <b>64</b> знаків у форматі Unicode, включаючи тільки <b>0-9</b>, <b>A-F</b> (шістнадцятковий формат).
+			</div>
 		</div>
 		<div class="mb-3">
-			<button class="btn btn-dark" type="button" onclick="generateRandHash()">Згенерувати ХЕШ</button>
+			<input class="form-control" id="symmetric_key_size" type="number" value="64" min="1" max="64">
 		</div>
-    </div>
+		<div class="mb-3">
+			<button class="btn btn-primary" type="button" onclick="generateHexadecimalKey('symmetric_key_size')">Згенерувати симетричний ключ</button>
+		</div>
+		<hr/>
+		<div class="mb-3">
+			<div class="alert alert-secondary" role="alert">
+				Ідентифікатор RAS містить від <b>6</b> до <b>24</b> знаків у форматі Unicode, включаючи тільки <b>0-9</b>, <b>A-Z</b>, <b>a-z</b>, дефіс "<b>-</b>", підкреслення "<b>_</b>", долар "<b>$</b>" та грати "<b>#</b>".
+			</div>
+		</div>
+		<div class="mb-3">
+			<input class="form-control" id="ras_id_size" type="number" value="24" min="6" max="24">
+		</div>
+		<div class="mb-3">
+			<button class="btn btn-secondary" type="button" onclick="generateRASID('ras_id_size')">Згенерувати iдентифікатор RAS</button>
+		</div>
+	</div>
 </main>
 <footer>
     <div class="text-center">
