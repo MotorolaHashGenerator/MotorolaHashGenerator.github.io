@@ -1,1 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Bootstrap CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Motorola Radio - Hash Generator</title>
+	
+	<link rel="alternate" href="https://motorolahashgenerator.github.io/" hreflang="uk" />
+</head>
+<body>
+<main class="container">
+	<div class="px-4 py-5 my-5">
+		<div class="mb-3 text-center">
+			<h1>Motorola Radio - Hash Generator</h1>
+		</div>
+		<div class="mb-3">
+			<div class="alert alert-success" role="alert">
+				Enhanced privacy keys contain <b>1</b> to <b>10</b> Unicode characters, including only <b>0-9</b>, <b>A-F</b> (hexadecimal format).
+			</div>
+		</div>
+		<div class="mb-3">
+			<input class="form-control" id="enhanzed_key_size" type="number" value="10" min="1" max="10">
+		</div>
+		<div class="mb-3">
+			<button class="btn btn-success" type="button" onclick="generateHexadecimalKey('enhanzed_key_size')">Generate enhanced privacy key</button>
+		</div>
+		<hr/>
+		<div class="mb-3">
+			<div class="alert alert-primary" role="alert">
+				Symmetric keys contain <b>1</b> to <b>64</b> Unicode characters, including only <b>0-9</b>, <b>A-F</b> (hexadecimal formatт).
+			</div>
+		</div>
+		<div class="mb-3">
+			<input class="form-control" id="symmetric_key_size" type="number" value="64" min="1" max="64">
+		</div>
+		<div class="mb-3">
+			<button class="btn btn-primary" type="button" onclick="generateHexadecimalKey('symmetric_key_size')">Generate symmetric key</button>
+		</div>
+		<hr/>
+		<div class="mb-3">
+			<div class="alert alert-secondary" role="alert">
+				 Restricted Access to System (RAS) contain <b>6</b> до <b>24</b> Unicode characters, including only <b>0-9</b>, <b>A-Z</b>, <b>a-z</b>, hyphen "<b>-</b>", underscore "<b>_</b>", dollar "<b>$</b>" and pound "<b>#</b>".
+			</div>
+		</div>
+		<div class="mb-3">
+			<input class="form-control" id="ras_id_size" type="number" value="24" min="6" max="24">
+		</div>
+		<div class="mb-3">
+			<button class="btn btn-secondary" type="button" onclick="generateRASID('ras_id_size')">Generate RAS</button>
+		</div>
+	</div>
+</main>
+<footer>
+    <div class="text-center">
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4 text-secondary">
+                Sincerely <a class="text-decoration-none text-info" href="/">Motorola Radio - Hash Generator</a> &copy;
+            </p>
+			<p class="lead mb-4">
+				<a class="text-decoration-none text-primary" href="/">Українська версія</a>
+			</p>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript" src="/../js/main.js"></script>
+</body>
+</html>
