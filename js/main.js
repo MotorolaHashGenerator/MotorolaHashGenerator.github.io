@@ -8,7 +8,7 @@ function getRandHash(size, elements) {
 	let hash = '';
 
 	for (let i = 0; i < size; i++) {
-	hash += getRandElement(elements);
+		hash += getRandElement(elements);
 	}
 
 	return hash;
