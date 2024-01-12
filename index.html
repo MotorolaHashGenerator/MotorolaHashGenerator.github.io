@@ -23,7 +23,7 @@
 			</label>
 		</div>
 		<div class="mb-3">
-			<input class="form-control" id="enhanzed_key_size" type="number" value="10" min="1" max="10">
+			<input class="form-control" id="enhanzed_key_size" type="number" value="10" min="1" max="10" step="1" minlength="1" maxlength="2">
 		</div>
 		<div class="mb-3">
 			<button class="btn btn-success" type="button" onclick="generateHexadecimalKey('enhanzed_key_size')">Згенерувати ключ покращеної конфіденційності</button>
@@ -35,7 +35,7 @@
 			</label>
 		</div>
 		<div class="mb-3">
-			<input class="form-control" id="symmetric_key_size" type="number" value="64" min="1" max="64">
+			<input class="form-control" id="symmetric_key_size" type="number" value="64" min="1" max="64" step="1" minlength="1" maxlength="2">
 		</div>
 		<div class="mb-3">
 			<button class="btn btn-primary" type="button" onclick="generateHexadecimalKey('symmetric_key_size')">Згенерувати симетричний ключ</button>
@@ -47,7 +47,7 @@
 			</label>
 		</div>
 		<div class="mb-3">
-			<input class="form-control" id="ras_id_size" type="number" value="24" min="6" max="24">
+			<input class="form-control" id="ras_id_size" type="number" value="24" min="6" max="24" step="1" minlength="1" maxlength="2">
 		</div>
 		<div class="mb-3">
 			<button class="btn btn-secondary" type="button" onclick="generateRASID('ras_id_size')">Згенерувати iдентифікатор RAS</button>
