@@ -18,39 +18,54 @@
 			<h1>Motorola Radio - Генератор Хешів та Ключів</h1>
 		</div>
 		<div class="mb-3">
-			<label for="enhanzed_key_size" class="mb-0 alert alert-success">
+			<div class="alert alert-success">
 				Ключі покращеної конфіденційності містять від <b>1</b> до <b>10</b> знаків у форматі Unicode, включаючи тільки <b>0-9</b>, <b>A-F</b> (шістнадцятковий формат).
-			</label>
-		</div>
-		<div class="mb-3">
-			<input class="form-control" id="enhanzed_key_size" type="number" value="10" min="1" max="10" step="1" minlength="1" maxlength="2">
-		</div>
-		<div class="mb-3">
-			<button class="btn btn-success" type="button" onclick="generateHexadecimalKey('enhanzed_key_size')">Згенерувати ключ покращеної конфіденційності</button>
+			</div>
+			<div class="row g-3 align-items-center">
+				<div class="col-auto">
+					<label for="enhanzed_key_size" class="col-form-label">Кількість знаків</label>
+				</div>
+				<div class="col-auto">
+					<input class="form-control" id="enhanzed_key_size" type="number" value="10" min="1" max="10" step="1" minlength="1" maxlength="2">
+				</div>
+				<div class="col-auto">
+					<button class="btn btn-success" type="button" onclick="generateHexadecimalKey('enhanzed_key_size')">Згенерувати ключ покращеної конфіденційності</button>
+				</div>
+			</div>
 		</div>
 		<hr/>
 		<div class="mb-3">
-			<label for="symmetric_key_size" class="mb-0 alert alert-primary">
+			<div class="alert alert-primary">
 				Симетричні ключі містять від <b>1</b> до <b>64</b> знаків у форматі Unicode, включаючи тільки <b>0-9</b>, <b>A-F</b> (шістнадцятковий формат).
-			</label>
-		</div>
-		<div class="mb-3">
-			<input class="form-control" id="symmetric_key_size" type="number" value="64" min="1" max="64" step="1" minlength="1" maxlength="2">
-		</div>
-		<div class="mb-3">
-			<button class="btn btn-primary" type="button" onclick="generateHexadecimalKey('symmetric_key_size')">Згенерувати симетричний ключ</button>
+			</div>
+			<div class="row g-3 align-items-center">
+				<div class="col-auto">
+					<label for="symmetric_key_size" class="col-form-label">Кількість знаків</label>
+				</div>
+				<div class="col-auto">
+					<input class="form-control" id="symmetric_key_size" type="number" value="64" min="1" max="64" step="1" minlength="1" maxlength="2">
+				</div>
+				<div class="col-auto">
+					<button class="btn btn-primary" type="button" onclick="generateHexadecimalKey('symmetric_key_size')">Згенерувати симетричний ключ</button>
+				</div>
+			</div>
 		</div>
 		<hr/>
 		<div class="mb-3">
-			<label for="ras_id_size" class="mb-0 alert alert-secondary">
+			<div class="alert alert-secondary">
 				Ідентифікатор RAS містить від <b>6</b> до <b>24</b> знаків у форматі Unicode, включаючи тільки <b>0-9</b>, <b>A-Z</b>, <b>a-z</b>, дефіс "<b>-</b>", підкреслення "<b>_</b>", долар "<b>$</b>" та грати "<b>#</b>".
-			</label>
-		</div>
-		<div class="mb-3">
-			<input class="form-control" id="ras_id_size" type="number" value="24" min="6" max="24" step="1" minlength="1" maxlength="2">
-		</div>
-		<div class="mb-3">
-			<button class="btn btn-secondary" type="button" onclick="generateRASID('ras_id_size')">Згенерувати iдентифікатор RAS</button>
+			</div>
+			<div class="row g-3 align-items-center">
+				<div class="col-auto">
+					<label for="ras_id_size" class="col-form-label">Кількість знаків</label>
+				</div>
+				<div class="col-auto">
+					<input class="form-control" id="ras_id_size" type="number" value="24" min="6" max="24" step="1" minlength="1" maxlength="2">
+				</div>
+				<div class="col-auto">
+					<button class="btn btn-secondary" type="button" onclick="generateRASID('ras_id_size')">Згенерувати iдентифікатор RAS</button>
+				</div>
+			</div>
 		</div>
 	</div>
 </main>
