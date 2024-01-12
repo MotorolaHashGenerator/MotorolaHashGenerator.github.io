@@ -2,9 +2,12 @@ function getInputValue(input_id) {
 	const element = document.getElementById(input_id);
 	const value = parseInt(element.value);
 	const max = parseInt(element.getAttribute('max'));
-
 	if (value > max)
 		return max;
+
+	const min = parseInt(element.getAttribute('min'));
+	if (value < min)
+		return min;
 
 	return value
 }
